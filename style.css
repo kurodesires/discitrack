@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: aliceblue;
+    color: midnightblue;
+    font-family: Arial, sans-serif;
+}
+
+.top {
+    background: white;
+    padding: 12px 25px;
+    border-bottom: 1px solid lightgray;
+}
+
+.top h2 {
+    margin: 0;
+}
+
+.auth-page {
+    width: 95%;
+    max-width: 1000px;
+    margin: 25px auto;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero {
+    background: midnightblue;
+    color: white;
+    padding: 35px 15px 50px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 12px 0 5px;
+}
+
+.hero p {
+    margin: 0;
+}
+
+
+
+#authPage .main-logo,
+#authPage .auth-intro .main-logo {
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+
+#authPage .auth-intro {
+    padding: 15px 10px 25px;
+    background-color: #0b2e73;
+    color: white;
+}
+
+
+
+.logo svg {
+    display: block;
+    width: 150%;
+    height: 150%;
+}
+
+.welcome {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.welcome p {
+    line-height: 1.5;
+    color: darkslategray;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.feature {
+    flex: 1;
+    padding: 15px 5px;
+    background: aliceblue;
+    border-radius: 10px;
+}
+
+.feature span {
+    font-size: 30px;
+}
+
+.feature h4 {
+    margin-bottom: 5px;
+}
+
+.login-box {
+    width: 90%;
+    max-width: 430px;
+    margin: 20px auto 35px;
+    padding: 25px;
+    text-align: left;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    background: white;
+}
+
+.login-box h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #b8c6d8;
+    border-radius: 5px;
+    font: inherit;
+    background: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #7da7e8;
+}
+
+button {
+    padding: 11px 16px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 5px;
+    background: midnightblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #263f80;
+}
+
+.login-box form button {
+    width: 100%;
+}
+
+a {
+    color: #204e9a;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.message {
+    min-height: 18px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.dashboard {
+    width: 95%;
+    max-width: 1250px;
+    margin: 20px auto;
+}
+
+.admin-layout,
+.student-layout {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 15px;
+    padding: 10px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.sidebar button {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.sidebar button.active {
+    background: #315a9e;
+}
+
+.page-content {
+    min-width: 0;
+}
+
+.dash-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dash-logo {
+    width: 42px;
+    height: 46px;
+    flex: 0 0 auto;
+}
+
+.dash-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 22px;
+    background: midnightblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.dash-header h1,
+.dash-header p {
+    color: white;
+    margin-top: 0;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.light-button {
+    background: aliceblue;
+    color: midnightblue;
+    border: 1px solid lightgray;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 15px 0;
+    padding: 10px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.nav button {
+    margin: 3px;
+}
+
+.panel {
+    margin: 15px 0;
+    padding: 22px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stat {
+    flex: 1;
+    min-width: 130px;
+    padding: 18px;
+    background: aliceblue;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat p {
+    margin-top: 0;
+}
+
+.stat h3 {
+    margin: 8px 0;
+    font-size: 30px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.form-grid label {
+    margin-top: 5px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th, td {
+    padding: 11px;
+    border: 1px solid lightgray;
+    text-align: left;
+}
+
+th {
+    background: midnightblue;
+    color: white;
+}
+
+.danger {
+    background: firebrick;
+}
+
+.footer {
+    padding: 12px;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .form-grid,
+    .filters {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .dash-header {
+        align-items: flex-start;
+    }
+
+    .admin-layout,
+    .student-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar button {
+        width: auto;
+        flex: 1 1 130px;
+        text-align: center;
+    }
+
+    .panel {
+        padding: 14px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+.dash-header .logo svg {
+    width: 40px;
+    height: 45px;
+    display: block;
+}
+
+.top-logo {
+    width: 30px;
+    height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.auth-page .logo {
+    width: 100px;
+    height: 110px;
+    margin: -40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+
+.auth-page .logo svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#studentDashboard .dash-header {
+    background: midnightblue;
+}
+
+#studentDashboard .nav button {
+    background: midnightblue;
+}
+
+#studentDashboard .nav button:hover {
+    background: midnightblue;
+}
+
+#studentDashboard .stat {
+    border: 1px solid #d3e5f7;
+}
+ 
+#studentDashboard .dash-header {
+  background: #0b2e73 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+}
+
+#studentDashboard .dash-header h1,
+#studentDashboard .dash-header p,
+#studentDashboard .dash-header span {
+  color: #ffffff !important;
+}
+
+.auth-intro .main-logo {
+  width: 30px !important;
+  height: 34px !important;
+  max-width: 30px !important;
+  max-height: 34px !important;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+body:has(#authPage:not(.hidden)) {
+  background-color: #0b2e73 !important;
+}
+
+#authPage .auth-intro {
+  background-color: #0b2e73 !important;
+  color: #ffffff !important;
+}
+
+#authPage .auth-intro h1,
+#authPage .auth-intro p {
+  color: #ffffff !important;
+}
+
+#authPage .main-logo {
+  width: 44px !important;
+  height: 48px !important;
+  max-width: 44px;
+  max-height: 48px;
+  display: block;
+  margin: 0 auto 8px;
+}
